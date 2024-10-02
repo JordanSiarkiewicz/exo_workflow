@@ -42,7 +42,7 @@ jobs:
     needs: download
     env:
       USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
-      PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+      PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }}
     steps:
       - name: login dockerhub
         uses: docker/login-action@v3
